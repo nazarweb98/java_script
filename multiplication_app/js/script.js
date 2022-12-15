@@ -32,3 +32,4 @@ changeNumbers();
 let maxMin = (max ,min)=> Math.floor(Math.random()*(max-min)) +min ;
 
 console.log(maxMin(350,50))
+console.log(maxMin(350,100))
