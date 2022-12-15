@@ -1,0 +1,57 @@
+:root{
+    --main-bg-color : brown;
+    --form-bg-color : pink;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: var(--form-bg-color);
+    padding: 20px;
+    margin: 10px;
+   
+}
+textarea{
+    min-height: 150px;
+}
+.footer-form{
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    transition: all 2s ease-in-out;
+    transform-origin: bottom;
+}
+.box:hover{
+    transform: scaleX(1) rotate(45deg);
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    background-color: rgb(52, 188, 124);
+
+    animation: runCube 5s ease-in 2s infinite alternate;
+}
+
+@keyframes runCube{
+    from {
+        transform: rotate(0) scale(1);
+    }
+    to {
+        transform: rotate(135deg) scale(1.5);
+    }
+}
