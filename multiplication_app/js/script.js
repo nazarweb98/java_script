@@ -36,3 +36,25 @@ let maxMin = (max ,min)=> Math.floor(Math.random()*(max-min)) +min ;
 console.log(maxMin(350,50))
 console.log(maxMin(350,100))
 
+let name = null;
+let text = "missing";
+let resultww = name ?? text;
+console.log(resultww)
+
+let counter = 0;
+
+// Function to increment counter
+function add() {
+  let counter = 0;
+  counter += 1;
+ return counter;
+}
+
+
+
+console.log(screen.height)
+console.log(screen.availHeight)
+console.log(location.protocol)
+console.log(navigator.appVersion)
+console.log(navigator.onLine)
+console.log(navigator.language)
